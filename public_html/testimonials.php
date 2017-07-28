@@ -28,47 +28,49 @@
         // $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
 
         if (!$connection) {
-            die("<p>Connection failed: " . mysqli_connect_error()."</p>");
+            die("<p class='bg-danger'>Connection failed: " . mysqli_connect_error()."</p>");
         }
-            else {
-                // echo "<p>Connected successfully</p>";
-            }
-        //set timezone
-        date_default_timezone_set("America/Vancouver");
-        //set charset
+        else {
+            // echo "<p>Connected successfully</p>";
+            //set timezone
+            date_default_timezone_set("America/Vancouver");
+            //set charset
+            mysqli_set_charset($connection, "utf8");
+            $query = " SELECT * FROM testimonials_tb ";
 
-        $query = " SELECT * FROM testimonials_tb ";
+            $queryResult = mysqli_query($connection, $query);
 
-        $queryResult = mysqli_query($connection, $query);
+            $numberOfRows = mysqli_num_rows($queryResult);
 
-        $numberOfRows = mysqli_num_rows($queryResult);
+            if($numberOfRows > 0 ) {
+                echo "<div class='container'>";
+                echo "<h1 class='test-h1'>Client Testimonials</h1>";
 
-        if($numberOfRows > 0 ) {
-            echo "<div class='container'>";
-            echo "<h1 class='test-h1'>Client Testimonials</h1>";
+                while($row = mysqli_fetch_assoc($queryResult)) {
+                    $name = $row["name"];
+                    $date = $row["date"];
+                    $content = $row["content"];
 
-            while($row = mysqli_fetch_assoc($queryResult)) {
-                $name = $row["name"];
-                $date = $row["date"];
-                $content = $row["content"];
+                    //set date format
+                    $dateFormat = "l \\t\h\\e jS \of F Y";
+                    $phpDate = date_create($date);
+                    $userDate = date_format($phpDate, $dateFormat);
 
-                //set date format
-                // $dateFormat = "l \\t\h\\e jS \of F Y";
-                // $userDate = date_format($date, $dateFormat);
+                    //Display testimonial
+                    echo "<div class='col-lg-9 col-md-12 col-sm-12'>";
 
-                //Display testimonial
-                echo "<div class='col-lg-9 col-md-12 col-sm-12'>";
-
-                echo 	"<h3 class='test-h3'>$name</h3>";
-                echo 	"<p class='test-date'>Date Submitted: $date</p>";
-                echo 	"<p class='test-content lead'>$content</p>";
+                    echo 	"<h3 class='test-h3'>$name</h3>";
+                    echo 	"<p class='test-date text-muted'><strong>Date Submitted:</strong> $userDate</p>";
+                    echo 	"<p class='test-content lead'>$content</p>";
+                    echo "</div>";
+                }
                 echo "</div>";
             }
-            echo "</div>";
-        }
-        //If no entries are found in columns display:
-        else {
-            echo "There is nothing in the table";
+            //If no entries are found in columns display:
+            else {
+                echo "<p class='bg-warning'>There are no testimonials yet.</p>";
+            }
+            mysqli_close($connection);
         }
     ?>
 
