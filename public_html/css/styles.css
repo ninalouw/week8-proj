@@ -148,6 +148,10 @@ nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
+.featurette {
+  margin-top: 20px;
+}
+
 .featurette-divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */
@@ -223,10 +227,18 @@ nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #ffcc00;
 }
 
+.log-in-form {
+  margin-top: 100px;
+}
+
+.testimonial-form {
+  margin-top: 100px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
+  /* Navbar positioning*/
   .navbar-wrapper {
     margin-top: 20px;
   }
@@ -260,7 +272,36 @@ nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 }
 
 @media only screen and (max-width: 500px) {
+  .section-header h1 {
+    font-size: 5rem;
+  }
+  .section-header p {
+    font-size: 1.5rem;
+  }
+  nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: white;
+  }
+  .navbar-default {
+    background-color: white;
+    opacity: 0.5;
+  }
+  h2, .featurette-heading {
+    font-size: 4rem;
+  }
+  .featurette-image {
+    display: none;
+  }
+  .logo {
+    display: none !important;
+  }
   .long-container {
     display: none;
+  }
+  .img-gallery {
+    width: 300px;
+    height: 300px;
+  }
+  .test-h1 {
+    font-size: 4rem;
   }
 }

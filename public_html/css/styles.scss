@@ -11,7 +11,9 @@ $headline-font: 'PT Sans', Helvetica, sans-serif;
 $heading-font-size: 3rem;
 $para-font-size:1.8rem;
 $hero-para-font-size: 2rem;
+$hero-para-font-size-mobile: 1.5rem;
 $hero-h1: 7rem;
+$hero-h1-mobile: 5rem;
 $h2: 5rem;
 $h1-text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
 $para-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
@@ -188,6 +190,9 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 }
 
 //features
+.featurette {
+  margin-top: 20px;
+}
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -262,13 +267,21 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   font-weight: bold;
   color:$button-color;
 }
+//log in form
+.log-in-form {
+  margin-top: $big-margin;
+}
+
+.testimonial-form {
+  margin-top: $big-margin;
+}
 
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
+  /* Navbar positioning*/
   .navbar-wrapper {
     margin-top: 20px;
   }
@@ -306,7 +319,37 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 
 //mobile
 @media only screen and (max-width: 500px) {
+  //hero section
+  .section-header h1 {
+    font-size: $hero-h1-mobile;
+  }
+  .section-header p {
+    font-size: $hero-para-font-size-mobile;
+  }
+  nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: white;
+  }
+  .navbar-default {
+    background-color: white;
+    opacity: 0.5;
+  }
+  h2, .featurette-heading {
+    font-size: 4rem;
+  }
+  .featurette-image {
+    display: none;
+  }
+  .logo {
+    display: none !important;
+  }
    .long-container {
        display: none;
    }
+  .img-gallery {
+    width: 300px;
+    height:300px;
+  }
+  .test-h1{
+    font-size: 4rem;
+  }
 }

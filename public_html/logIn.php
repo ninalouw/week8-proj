@@ -4,10 +4,8 @@
 ?>
 <!--Include our head section and our navbar-->
 <?php include "partials/header.php"; ?>
-<br>
-<br>
-<br>
-<div class="container">
+
+<div class="log-in-form container">
     <h1>Log In </h1>
 	<p>Please type your username and password to log in.</p>
     <form action="<?php echo htmlentities( $_SERVER[ 'PHP_SELF' ] ); ?>" method="post">
@@ -19,7 +17,7 @@
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
     </div>
-    <button type="submit" class="btn btn-default" name="submit">Submit</button>
+    <button type="submit" class="btn btn-warning" name="submit">Submit</button>
     </form>
 </div>
 <!--Footer-->

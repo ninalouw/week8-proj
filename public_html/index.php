@@ -9,9 +9,9 @@
                     <div class="content row">
                         <h1>Awe-Inspiring Imagery</h1>
                         <p>Bespoke travel photography for high-end publications 
-                            - all at the click of a button
+                            - all at the click of a button!
                         </p>
-                        <button class="btn-primary" role="button">Get Started &raquo;</button>
+                        <button class="btn-primary" role="button" href="gallery.php">Get Started &raquo;</button>
                     </div>
                 </div>
             </div>
@@ -40,36 +40,36 @@
         <!-- long-image header -->
         <div class="row long-container">
             <h2 class="h2-long" >Destination-Specific Photography</h2>
-            <img class="img-responsive long-image" src="img/pichu_large.jpg">
+            <img class="img-responsive long-image" src="img/pichu_large.jpg" alt="travel image">
         </div>
 
         <!-- 2 continent columns below the header -->
         <div class="row continent-feature">
             <div class="col-lg-6 col=md-6 col-sm-12">
-                <img class="img-responsive" src="img/agra-400.jpg" alt="Generic placeholder image"
+                <img class="img-responsive" src="img/agra-400.jpg" alt="India placeholder image"
                     width="400" height="400">
                 <h3>Asia</h3>
                 <p>EdiPhotos is the Asia photography specialist. We have photographers based in Thailand, India, Myanmar, Cambodia, Japan, Korea and China.
                     Our photographers are available for assignment in various locations, and according to availability. Our photographers in Asia are continent-specialists,
                     some having spent more than a decade in their base country.
                 </p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" href="gallery.php" role="button" href="gallery.php">View Gallery &raquo;</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-responsive" src="img/inca-400.jpg" alt="Generic placeholder image"
+                <img class="img-responsive" src="img/inca-400.jpg" alt="Peru placeholder image"
                     width="400" height="400">
                 <h3>South America</h3>
                 <p>EdiPhotos is the South America photography specialist. We have photographers based in Brazil, Argentina, Peru, Chile, Colombia, Panama, Uruguay and Paraguay. Our photographers are available for assignment in various locations, and according to availability.
                 Our photographers in South America are continent-specialists, some having spent more than a decade in their base country.</p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" href="gallery.php" role="button" href="gallery.php">View Gallery &raquo;</a></p>
             </div>
         </div>
 
         <!-- long-image header -->
         <div class="row long-container">
             <h2 class="h2-long">Our Unique Photographers</h2>
-            <img class="img-responsive long-image" src="img/fitz-blue-large.jpg">
+            <img class="img-responsive long-image" src="img/fitz-blue-large.jpg" alt="Mount FitzRoy">
         </div>
         <!-- Our photographer section -->
         <div class="row featurette photographer-feature">
@@ -90,42 +90,42 @@
         <!-- 2x rows of photographers -->
         <div class="row continent-feature">
             <div class="col-lg-6 col=md-6 col-sm-12">
-                <img class="img-responsive" src="img/rock-400.jpg" alt="Generic placeholder image" width="400" height="400">
+                <img class="img-responsive" src="img/rock-400.jpg" alt="View placeholder image" width="400" height="400">
                 <h3>David Crookes</h3>
                 <p>David Crookes is an image-maker. David has photographed in more than 65 countries and collaborated with Conde Nast Traveller
                 since 2004. After graduating with distinctions in Fine Art David has continued to depict, abstract and create
                 using photography as his preferred medium.
                 </p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" href="gallery.php" role="button">View Gallery &raquo;</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-responsive" src="img/cheetah-400.jpg" alt="Generic placeholder image" width="400" height="400">
+                <img class="img-responsive" src="img/cheetah-400.jpg" alt="Cheetah placeholder image" width="400" height="400">
                 <h3>Frans Lanting</h3>
                 <p>Frans Lanting is an award-winning photographer whose work is commissioned frequently by National Geographic, where he served as a Photographer-in-Residence. His assignments
                 have ranged from a first look at the fabled bonobos of the Congo to the forests of Asia.</p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" role="button" href="gallery.php">View Gallery &raquo;</a></p>
             </div>
         </div>
         <div class="row continent-feature">
             <div class="col-lg-6 col=md-6 col-sm-12">
-                <img class="img-responsive" src="img/capitan-400.jpg" alt="Generic placeholder image" width="400" height="400">
+                <img class="img-responsive" src="img/capitan-400.jpg" alt="El Capitan placeholder image" width="400" height="400">
                 <h3>Thomas Peschak</h3>
                 <p>Thomas Peschak is a multiple winner in the BBC Wildlife Photographer of the Year Awards and received World Press Photo Awards for his
                 work in2011 and 2013. Thomas has written and photographed five books: Currents of Contrast, Great White Shark, Wild Seas Secret Shores and Lost
                 World.
                 </p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" role="button" href="gallery.php">View Gallery &raquo;</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-responsive" src="img/bali-400.jpg" alt="Generic placeholder image" width="400" height="400">
+                <img class="img-responsive" src="img/bali-400.jpg" alt="Bali placeholder image" width="400" height="400">
                 <h3>Ami Vitale</h3>
                 <p>Nikon Ambassador Ami Vitale has lived all over the world in keeping with her philosophy of “living the story.”
                     Based in Argentina, Vitale is a contract photographer with National Geographic magazine and frequently gives workshops throughout
                     the Americas, Europe and Asia.
                 </p>
-                <p><a class="btn-primary" href="#" role="button" href="gallery.php">View Gallery &raquo;</a></p>
+                <p><a class="btn-primary" role="button" href="gallery.php">View Gallery &raquo;</a></p>
             </div>
         </div>
 
@@ -133,7 +133,7 @@
         <div class="row long-container">
             <a class="btn-long btn-primary" href="testimonials.php" role="button" href="testimonials.php">Testimonials &raquo;</a>
             <h2 class="h2-long">We delight our clients</h2>
-            <img class="img-responsive long-image" src="img/myanmar-long.jpg">
+            <img class="img-responsive long-image" src="img/myanmar-long.jpg" alt="myanmar image">
         </div>
         <!-- container end -->
     </div>

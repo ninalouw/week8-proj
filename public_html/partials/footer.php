@@ -1,6 +1,7 @@
 <!--Footer  -->
     <footer class="page-footer">
         <div class="container">
+            <strong>Contact us!</strong>
             <address>
                 <strong>EdiPhotos</strong><br> 1355 Market Street, Suite 900<br> Toronto, ON 94103<br>
                 <abbr title="Phone">P:</abbr> (604) 456-7890
