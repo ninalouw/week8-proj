@@ -183,6 +183,7 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 //   max-width: 80%;
   text-align: center;
   margin:40px;
+  text-shadow: $h1-text-shadow;
 }
 
 //features
@@ -244,7 +245,9 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 
 // Gallery Page
 .img-gallery{
-    width: 100%;
+    width: 400px;
+    height:400px;
+    margin: 15px;
 }
 
 /* RESPONSIVE CSS

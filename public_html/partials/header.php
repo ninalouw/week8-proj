@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                <span><a class="navbar-brand" href="#"><img class="logo"src="img/logo-sm.png" alt="logo">EdiPhotos</a></span>
+                <span><a class="navbar-brand" href="index.php"><img class="logo"src="img/logo-sm.png" alt="logo">EdiPhotos</a></span>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

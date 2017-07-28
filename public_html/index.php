@@ -4,7 +4,7 @@
     <div class="wrapper">
         <div class="section section-header">
             <div class="parallax pattern-image">
-                <img src="img/fitzroy-hero-large.jpg">
+                <img src="img/fitzroy-hero-large.jpg" alt="hero image">
                 <div class="container">
                     <div class="content row">
                         <h1>Awe-Inspiring Imagery</h1>

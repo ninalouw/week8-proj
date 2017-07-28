@@ -3,10 +3,10 @@
     <div class="wrapper">
         <div class="section section-header">
             <div class="parallax pattern-image">
-                <img src="img/myanmar-long.jpg">
+                <img src="img/myanmar-hero.jpg" alt="hero image">
                 <div class="container">
                     <div class="content row">
-                        <h1>All Our Satisfied Clients</h1>
+                        <h1>Our Satisfied Clients</h1>
                         <p>Hear what our happy clients say about us!
                         </p>
                         <button class="btn-primary" role="button">Get Started &raquo;</button>
