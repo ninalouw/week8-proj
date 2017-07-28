@@ -131,7 +131,7 @@
 
         <!-- long-image header -->
         <div class="row long-container">
-            <a class="btn-long btn-primary" href="#" role="button" href="testimonials.php">Testimonials &raquo;</a>
+            <a class="btn-long btn-primary" href="testimonials.php" role="button" href="testimonials.php">Testimonials &raquo;</a>
             <h2 class="h2-long">We delight our clients</h2>
             <img class="img-responsive long-image" src="img/myanmar-long.jpg">
         </div>

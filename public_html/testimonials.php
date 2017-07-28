@@ -16,23 +16,61 @@
         </div>
     </div>
 
-<!-- Echo in PHP here, see week 4 -->
-<div class="container">
-     <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12">
-          <h3 class="test-h3">Heading</h3>
-          <p class="test-date">Date:</p>
-          <p class=" test-content lead" >Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div>
-      </div>
+    <!-- PHP-->
+    <?php
+            //parse the ini file
+            // $configArray = parse_ini_file("../../con/config.ini");
+            define("DB_HOST", "localhost");
+            define("DB_USER", "root");
+            define("DB_PASSWORD", "root");
+            define("DB_NAME", "testimonials_db");
+            $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        // $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
 
-     <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12">
-          <h3 class="test-h3">Heading</h3>
-          <p class="test-date">Date:</p>
-          <p class=" test-content lead" >Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div>
-      </div>
-</div>
+        if (!$connection) {
+            die("<p>Connection failed: " . mysqli_connect_error()."</p>");
+        }
+            else {
+                // echo "<p>Connected successfully</p>";
+            }
+        //set timezone
+        date_default_timezone_set("America/Vancouver");
+        //set charset
+
+        $query = " SELECT * FROM testimonials_tb ";
+
+        $queryResult = mysqli_query($connection, $query);
+
+        $numberOfRows = mysqli_num_rows($queryResult);
+
+        if($numberOfRows > 0 ) {
+            echo "<div class='container'>";
+            echo "<h1 class='test-h1'>Client Testimonials</h1>";
+
+            while($row = mysqli_fetch_assoc($queryResult)) {
+                $name = $row["name"];
+                $date = $row["date"];
+                $content = $row["content"];
+
+                //set date format
+                // $dateFormat = "l \\t\h\\e jS \of F Y";
+                // $userDate = date_format($date, $dateFormat);
+
+                //Display testimonial
+                echo "<div class='col-lg-9 col-md-12 col-sm-12'>";
+
+                echo 	"<h3 class='test-h3'>$name</h3>";
+                echo 	"<p class='test-date'>Date Submitted: $date</p>";
+                echo 	"<p class='test-content lead'>$content</p>";
+                echo "</div>";
+            }
+            echo "</div>";
+        }
+        //If no entries are found in columns display:
+        else {
+            echo "There is nothing in the table";
+        }
+    ?>
+
 <!--Footer-->
 <?php include "partials/footer.php"; ?>

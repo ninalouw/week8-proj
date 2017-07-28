@@ -23,10 +23,10 @@
                 <img class="img-responsive center-block img-gallery" src="img/paris-400.jpg" alt="gallery photo">
             </div>
             <div class="col-md-4 col-lg-4 col-sm-12">
-                <img class="img-responsive center-block img-gallery" src="img/bali-400.jpg" alt="gallery photo">
+                <img class="img-responsive center-block img-gallery" src="img/europe-400.jpg" alt="gallery photo">
             </div>
             <div class="col-md-4 col-lg-4 col-sm-12">
-                <img class="img-responsive center-block img-gallery" src="img/pichu-gallery.jpg" alt="gallery photo">
+                <img class="img-responsive center-block img-gallery" src="img/agra-400.jpg" alt="gallery photo">
             </div>
         </div>
 
@@ -41,8 +41,32 @@
                 <img class="img-responsive center-block img-gallery" src="img/inca-400.jpg" alt="gallery photo">
             </div>
         </div>
-    </div>
 
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/cheetah-400.jpg" alt="gallery photo">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/capitan-400.jpg" alt="gallery photo">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/india-400.jpg" alt="gallery photo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/island-400.jpg" alt="gallery photo">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/ant-400.jpg" alt="gallery photo">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img class="img-responsive center-block img-gallery" src="img/mountains-400.jpg" alt="gallery photo">
+            </div>
+        </div>
+    <!-- //container -->
+    </div>
 
 <!--Footer-->
 <?php include "partials/footer.php"; ?>

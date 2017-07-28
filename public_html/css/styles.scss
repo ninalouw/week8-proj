@@ -98,11 +98,12 @@ a:hover, a:focus {
   padding: 20px 15px;
   font-size: $para-font-size;
   font-family: $text-font;
-  color: $text-color;
+  color: black;
   letter-spacing: 0;
 }
 .navbar-default .navbar-nav>li>a {
-    color: $text-color;
+    color: black;
+    font-weight: bold;
 }
 
 nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -116,7 +117,7 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 
 .navbar-default {
     text-transform: uppercase;
-    color: $text-color;
+    color: black;
     background-color: transparent;
 }
 
@@ -248,6 +249,17 @@ nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     width: 400px;
     height:400px;
     margin: 15px;
+}
+
+//testimonials
+.test-h1 {
+    font-size: $h2;
+    text-transform: uppercase; 
+    text-align: center;
+    color: black;
+}
+.test-h3 {
+  font-weight: bold;
 }
 
 /* RESPONSIVE CSS
