@@ -28,11 +28,13 @@
     // Store username in username if login was pressed
     if(isset($_POST['submit']) AND !empty($_POST['username'])) {
 
-        $host = "localhost";
-        $username = "root";
-        $password = "root";
-        $database = "users_db";
-        $connection = mysqli_connect($host, $username, $password, $database);
+        // $host = "localhost";
+        // $username = "root";
+        // $password = "root";
+        // $database = "users_db";
+        // $connection = mysqli_connect($host, $username, $password, $database);
+        $configArray = parse_ini_file("../../con/config.ini");
+        $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
 
         if(!$connection) {
             echo "Connection Failed";

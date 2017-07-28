@@ -33,12 +33,14 @@
                 
                 if(isset($_POST['name']) && isset($_POST['content']) && isset($_POST['submit'])){
 
-                    $host = "localhost";
-                    $username = "root";
-                    $password = "root";
-                    $database = "testimonials_db";
-                    $connection = mysqli_connect($host, $username, $password, $database);
-
+                    // $host = "localhost";
+                    // $username = "root";
+                    // $password = "root";
+                    // $database = "testimonials_db";
+                    // $connection = mysqli_connect($host, $username, $password, $database);
+                    $configArray = parse_ini_file("../../con/config.ini");
+                    $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
+                    
                     if(!$connection) {
                         echo "<p class='bg-danger'>Connection Failed</p>";
                     }

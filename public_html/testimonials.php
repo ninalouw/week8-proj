@@ -19,13 +19,14 @@
     <!-- PHP-->
     <?php
         //parse the ini file
-        // $configArray = parse_ini_file("../../con/config.ini");
-        define("DB_HOST", "localhost");
-        define("DB_USER", "root");
-        define("DB_PASSWORD", "root");
-        define("DB_NAME", "testimonials_db");
-        $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-        // $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
+        $configArray = parse_ini_file("../../con/config.ini");
+        //uncomment for local use
+        // define("DB_HOST", "localhost");
+        // define("DB_USER", "root");
+        // define("DB_PASSWORD", "root");
+        // define("DB_NAME", "testimonials_db");
+        // $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        $connection = mysqli_connect($configArray["host"], $configArray["username"], $configArray["password"], $configArray["database"] );
 
         if (!$connection) {
             die("<p class='bg-danger'>Connection failed: " . mysqli_connect_error()."</p>");
