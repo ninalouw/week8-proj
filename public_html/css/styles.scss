@@ -1,0 +1,295 @@
+//colors
+$text-color:white;
+$button-color: #ffcc00;
+$quote-button-color:#FFA600;
+$menu-item-color: white;
+$header-height: 60px;
+
+//fonts
+$text-font: 'Roboto', Helvetica, sans-serif;
+$headline-font: 'PT Sans', Helvetica, sans-serif;
+$heading-font-size: 3rem;
+$para-font-size:1.8rem;
+$hero-para-font-size: 2rem;
+$hero-h1: 7rem;
+$h2: 5rem;
+$h1-text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+$para-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+//sizes
+$content-width: 960px;
+$header-height:60px;
+$footer-height:90px;
+$margin-top: 50px;
+$def-margin: 10px;
+$def-padding: 10px;
+$big-margin: 100px;
+
+//home cards
+@mixin card-shadow {
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(112,108,112,1);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(112,108,112,1);
+    box-shadow: 0px 2px 6px 0px rgba(112,108,112,1);
+}
+
+@mixin btn-shadow {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+-moz-box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+box-shadow: 0px 1px 4px 0px rgba(112,108,112,1);
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $headline-font;
+  font-size: $heading-font-size;
+  font-weight: 400;
+  margin: 30px 0 15px;
+}
+
+p, button {
+    font-family: $text-font;
+    font-size: $para-font-size;
+}
+
+h2 {
+   font-size: $h2;
+   text-transform: uppercase; 
+}
+
+.logo {
+    width:50px;
+    height:40px;
+    display: inline;
+}
+
+.btn-primary {
+    padding: 6px 12px;
+    margin: 5px;
+    color: white;
+    background-color: $button-color;
+    border: none;
+    @include btn-shadow;
+}
+.btn-primary:hover {
+    background-color: $quote-button-color;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+//navbar
+.navbar {
+  border: 0;
+  font-size: 16px;
+  padding:0;
+  margin:0;
+  position: absolute;
+}
+.navbar .navbar-brand {
+  font-weight: 600;
+  margin: 5px 0px;
+  padding: 20px 15px;
+  font-size: $para-font-size;
+  font-family: $text-font;
+  color: $text-color;
+  letter-spacing: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: $text-color;
+}
+
+nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:$quote-button-color;
+    background-color: transparent;
+}
+.navbar .navbar-nav > li > a {
+  padding: 10px 15px;
+  margin: 15px 3px;
+}
+
+.navbar-default {
+    text-transform: uppercase;
+    color: $text-color;
+    background-color: transparent;
+}
+
+.wrapper {
+    text-align: center !important;
+    overflow: hidden;
+  }
+
+.section {
+  padding: 1.875em 0;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.section .parallax, .section .full-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+
+.section-header {
+  padding: 0;
+}
+.section-header .container {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+}
+
+.section-header .content {
+  position: relative;
+  color: white;
+  text-align: center;
+  text-shadow: $para-text-shadow;
+  vertical-align: center;
+  line-height: 1.7;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.section-header h1 {
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-size: $hero-h1;
+  font-family: $headline-font;
+  color: $text-color;
+  text-transform: uppercase;
+  text-shadow: $h1-text-shadow;
+}
+
+.section-header p {
+  color: $text-color;
+  font-family: $text-font;
+  font-size: $hero-para-font-size;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 1em 0 0.5em;
+//   max-width: 80%;
+  text-align: center;
+  margin:40px;
+}
+
+//features
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+//long image heading
+.long-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:$big-margin;
+    margin-bottom:$big-margin;
+}
+.long-image{
+    width:100%;
+}
+.h2-long{
+    position: absolute;
+    text-align: center;
+    color: $text-color;
+    text-shadow: $h1-text-shadow;
+}
+.btn-long {
+    position: absolute;
+    text-align: center;
+    margin-top:$big-margin;
+}
+
+//continent feature
+.continent-feature h3, p {
+    padding: 15px;
+}
+.continent-feature h3 {
+    font-weight: bold;
+}
+
+//photographer feature
+.photographer-feature {
+    margin-top:$big-margin;
+    margin-bottom:$big-margin;
+}
+
+//footer
+.page-footer {
+    background-color: $button-color;
+    color: white;
+    padding: 40px;
+    margin-top:40px !important;
+}
+
+// Gallery Page
+.img-gallery{
+    width: 100%;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+//mobile
+@media only screen and (max-width: 500px) {
+   .long-container {
+       display: none;
+   }
+}
